@@ -3,12 +3,12 @@ from unittest import TestCase, main
 
 
 expected_output = '''\
-test_case.py:4:10: U001: u-prefixed string u\'\'\'\\nNO\\n\'\'\'
-test_case.py:10:12: U001: u-prefixed string u'a'
-test_case.py:12:12: U001: u-prefixed string U'a'
-test_case.py:13:12: U001: u-prefixed string u"b"
-test_case.py:14:12: U001: u-prefixed string u"b"
-test_case.py:16:12: U001: u-prefixed string u"""c"""
+test_case.py:4:10: UPS: u-prefixed string u\'\'\'\\nNO\\n\'\'\'
+test_case.py:10:12: UPS: u-prefixed string u'a'
+test_case.py:12:12: UPS: u-prefixed string U'a'
+test_case.py:13:12: UPS: u-prefixed string u"b"
+test_case.py:14:12: UPS: u-prefixed string u"b"
+test_case.py:16:12: UPS: u-prefixed string u"""c"""
 '''
 
 
@@ -33,7 +33,7 @@ class PluginTest(TestCase):
         )
         popen = Popen(
             args=[
-                'python', '-m', 'flake8', '--select=U001',
+                'python', '-m', 'flake8', '--select=UPS',
                 '--ignore=H,E,D,N,F', 'test_case.py'
             ],
             stdout=PIPE,

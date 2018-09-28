@@ -13,7 +13,7 @@ setuptools.setup(
     packages=["flake8_no_u_prefixed_strings"],
     install_requires=["flake8 > 3.0.0"],
     entry_points={
-        'flake8.extension': ['U001=flake8_no_u_prefixed_strings:plugin'],
+        'flake8.extension': ['UPS=flake8_no_u_prefixed_strings:plugin'],
     },
     classifiers=[
         "Framework :: Flake8",

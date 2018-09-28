@@ -18,7 +18,7 @@ def plugin(tree, file_tokens):
             yield (
                 start[0],  # line_number
                 start[1],  # offset
-                'U001: u-prefixed string ' + repr(token_string)[1:-1],  # text
+                'UPS: u-prefixed string ' + repr(token_string)[1:-1],  # text
                 None  # check # unused
             )
 

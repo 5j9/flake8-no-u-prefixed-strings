@@ -1,6 +1,6 @@
 """Define a flake8 plugin to check for invalid escape sequences."""
 
-__version__ = '0.1'
+__version__ = '0.2.dev'
 
 from token import STRING
 

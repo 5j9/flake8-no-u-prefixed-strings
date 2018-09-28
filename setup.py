@@ -1,5 +1,5 @@
 import setuptools
-from flake8_invalid_escape_sequences import __version__
+from flake8_no_u_prefixed_strings import __version__
 
 requires = [
     "flake8 > 3.0.0",

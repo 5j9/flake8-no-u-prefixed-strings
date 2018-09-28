@@ -1,9 +1,6 @@
 import setuptools
 from flake8_no_u_prefixed_strings import __version__
 
-requires = [
-    "flake8 > 3.0.0",
-]
 
 setuptools.setup(
     name="flake8-no-u-prefixed-strings",
@@ -13,14 +10,10 @@ setuptools.setup(
     author="5j9",
     author_email="5j9@users.noreply.github.com",
     url="https://github.com/5j9/flake8-no-u-prefixed-strings",
-    packages=[
-        "flake8_no_u_prefixed_strings",
-    ],
-    install_requires=requires,
+    packages=["flake8_no_u_prefixed_strings"],
+    install_requires=["flake8 > 3.0.0"],
     entry_points={
-        'flake8.extension': [
-            'U001=flake8_no_u_prefixed_strings:plugin',
-        ],
+        'flake8.extension': ['U001=flake8_no_u_prefixed_strings:plugin'],
     },
     classifiers=[
         "Framework :: Flake8",
